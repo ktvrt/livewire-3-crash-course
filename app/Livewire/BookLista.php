@@ -8,6 +8,17 @@ use App\Models\Book;
 class BookLista extends Component
 {
     public $name = "Beto";
+    public $contador = 0;
+
+    public function incrementar($numero)
+    {
+        $this->contador+=$numero;
+    }
+
+    public function eliminar(Book $libro){
+        $libro->delete();
+        //$this->emit('bookDeleted', $libro->id);
+    }
 
     public function render()
     {
