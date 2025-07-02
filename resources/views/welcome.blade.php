@@ -8,7 +8,9 @@
 </head>
 <body>
   <main>
-    <h2>Welcome to the Livewire Crash Course!</h2>
+    <h2>Welcome to the Livewire Crash Course! </h2>
+
+    <livewire:book-lista>
   </main>
 </body>
 </html>
