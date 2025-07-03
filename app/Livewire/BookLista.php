@@ -12,7 +12,7 @@ class BookLista extends Component
 
     public function incrementar($numero)
     {
-        $this->contador+=$numero;
+        $this->contador+=$numero;        
     }
 
     public function eliminar(Book $libro){
