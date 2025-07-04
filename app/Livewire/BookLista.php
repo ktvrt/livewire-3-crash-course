@@ -7,16 +7,8 @@ use App\Models\Book;
 use Livewire\Attributes\Title;
 
 class BookLista extends Component
-{
-    public $name = "Beto";
-    public $contador = 0;
-
+{    
     public $title = "Lista de Libros - Home";
-
-    public function incrementar($numero)
-    {
-        $this->contador+=$numero;        
-    }
 
     public function eliminar(Book $libro){
         $libro->delete();
