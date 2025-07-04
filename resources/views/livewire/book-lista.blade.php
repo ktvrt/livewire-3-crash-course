@@ -15,4 +15,5 @@
             </li>
         @endforeach
     </ul>
+    {{ $libros->links() }}
 </div>
