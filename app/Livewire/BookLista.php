@@ -29,11 +29,7 @@ class BookLista extends Component
 
     #[Title('Lista de Libros - Home')]
     public function render()
-    {        
-        //alert()->info("Buscando libros con el título: {$this->buscador}");
-        if($this->buscador){
-            //alert()->info("Buscando libros con el título: {$this->buscador}");
-        }
+    {              
         return view('livewire.book-lista',
             [                
                 'libros' => Book::latest()->where("title","LIKE", "%{$this->buscador}%")
