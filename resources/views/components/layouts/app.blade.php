@@ -12,11 +12,13 @@
         <div>
           <h1>My Book Reviews</h1>
           <a 
+            wire:navigate
             @class(['active' => request()->is('/')]) 
             href="/">
             Book List
           </a>
           <a 
+            wire:navigate
             @class(['active' => request()->is('create')]) 
             href="/create">
             Add a Book

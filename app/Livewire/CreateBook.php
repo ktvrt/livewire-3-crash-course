@@ -28,7 +28,7 @@ class CreateBook extends Component
             'rating' => $this->rating
         ]);
 
-        $this->redirect("/");
+        $this->redirect("/",navigate: true);
     }
 
     #[Layout('components.layouts.segundo')]
